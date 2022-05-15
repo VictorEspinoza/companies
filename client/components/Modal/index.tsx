@@ -10,7 +10,7 @@ import * as Styled from './index.styles'
 interface Props {
   onClose: () => void
   // eslint-disable-next-line no-unused-vars
-  onSubmit: (variables: Record<any, any>) => void
+  onSubmit: (variables: Record<string, any>) => void
 }
 
 const STAGES: { [key: string]: string } = {
