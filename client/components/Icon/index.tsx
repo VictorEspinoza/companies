@@ -34,13 +34,13 @@ const getIcon = (kind: string) => {
   return icon
 }
 const Icon: React.FC<Props> = ({ kind }) => {
-  const Icon = styled(getIcon(kind))`
+  const IconComponent = styled(getIcon(kind))`
     width: 100%;
   `
 
   return (
     <Styled.Container>
-      <Icon />
+      <IconComponent />
     </Styled.Container>
   )
 }

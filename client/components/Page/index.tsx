@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react'
-import { useLazyQuery, useMutation, useQuery } from '@apollo/client'
+import { useLazyQuery, useMutation } from '@apollo/client'
 import { GET_COMPANIES, CompanyType, ADD_COMPANY } from '@client/graphql'
 import CompaniesBySectors from '@client/components/CompaniesBySectors'
 import CompaniesOverview from '@client/components/CompaniesOverview'

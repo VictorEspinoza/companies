@@ -1,5 +1,6 @@
 import styled from 'styled-components'
 
+// eslint-disable-next-line import/no-named-default
 import { default as ButtonComponent } from '@client/components/Button'
 
 export const Container = styled.div`

@@ -4,7 +4,7 @@ import {
 
 const uri = `${window.location.protocol}//${window.location.hostname}:8000/${'graphql'}`
 
-const httpLink = new HttpLink({uri})
+const httpLink = new HttpLink({ uri })
 
 const cache = new InMemoryCache()
 
