@@ -1,4 +1,4 @@
-import {gql} from '@apollo/client'
+import { gql } from '@apollo/client'
 
 export interface CompanyType {
   id: string
@@ -17,14 +17,16 @@ export const GET_COMPANIES = gql`
       sector
       investmentSize
     }
-  }`
+  }
+`
 
 export const ADD_COMPANY = gql`
-  mutation addCompany ($name: String!, $stage: String!, $sector: String!, $investmentSize: Int!) {
+  mutation addCompany($name: String!, $stage: String!, $sector: String!, $investmentSize: Int!) {
     addCompany(name: $name, stage: $stage, sector: $sector, investmentSize: $investmentSize) {
       name
       stage
       sector
       investmentSize
     }
-  }`
+  }
+`
